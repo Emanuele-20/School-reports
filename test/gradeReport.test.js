@@ -18,9 +18,9 @@ describe("Report", () => {
         expect(score("Amber")).toBe("Amber: 1")
     })
 
-    // it("Return 'Green: 1' when a single green value is passed", () => {
-    //     expect(score("Green")).toBe("Green: 1")
-    // })
+    it("Return 'Red: 1' when a single green value is passed", () => {
+        expect(score("Red")).toBe("Red: 1")
+    })
 
 
 
