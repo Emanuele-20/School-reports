@@ -6,7 +6,23 @@ describe("Report", () => {
         expect(typeof score ).toBe('function')
     })
 
-    it("Return 'no result given' if an empty string is passed", ()=> {
+    it("Returns 'no result given' if an empty string is passed", ()=> {
         expect(score("")).toEqual('No result given')
     })
+
+    it("Return 'Green: 1' when a single green value is passed", () => {
+        expect(score("Green")).toBe("Green: 1")
+    })
+
+    it("Return 'Amber: 1' when a single green value is passed", () => {
+        expect(score("Amber")).toBe("Amber: 1")
+    })
+
+    // it("Return 'Green: 1' when a single green value is passed", () => {
+    //     expect(score("Green")).toBe("Green: 1")
+    // })
+
+
+
+
 })
