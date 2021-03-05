@@ -1,7 +1,8 @@
-const score = require('../src/gradeReport')
+const score = require('../src/generateReport')
 
 
 describe("Report", () => {
+    
     it("Returns true if a string in passed", ()=> {
         expect(typeof score ).toBe('function')
     })
@@ -10,8 +11,8 @@ describe("Report", () => {
         expect(score("")).toEqual('No result given')
     })
 
-    it("Return 'Green: 1' when a single green value is passed", () => {
-        expect(score("Green")).toBe("Green: 1")
+    it("Returns 'no result given' if an empty string is passed", ()=> {
+        expect(score("")).toEqual('No result given')
     })
 
     it("Return 'Amber: 1' when a single green value is passed", () => {
@@ -50,10 +51,9 @@ describe("Report", () => {
         expect(score("Green, Green, Red, Amber, Red")).toBe("Green: 2,Amber: 1,Red: 2")
     })
 
-    it("Return Green: 2\nAmber: 1\nRed: 2 when multiple rate colors are passed", () => {
+    it("Return 'Green: 2\nAmber: 1\nRed: 2' when multiple rate colors are", () => {
         expect(score("Green, Green, Red, Amber, Red")).toBe("Green: 2\nAmber: 1\nRed: 2")
     })
-
 
 
 

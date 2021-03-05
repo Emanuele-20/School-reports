@@ -4,7 +4,7 @@ function score(arg){
     let nAmber = 0
     let nRed = 0
     let solution = []
-    let array = arg.trim().split(",")
+    let array = arg.split(",")
 
     for(let i = 0; i < array.length ; i++){
 
@@ -23,6 +23,7 @@ function score(arg){
         if(array[i].trim() === ""){
             solution.push("No result given")
         }
+        
 
     }
         

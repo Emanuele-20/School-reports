@@ -1,18 +1,17 @@
-school report company
+# School reports  company
+We help to find out how their students did on tests.
 
-Tests
 
-Comma separete string from test result 
+We are receiving comma separete strings with test results in them and 
+we want to create a summery report.
 
-Report
 
 | Input | Output |
-"Green, Green, Red, Amber, Red" | "Green: 2
-                                \nAmber: 1
-                                \nRed: 2 | 
-Green | Green: 1
-Amber | Amber : 1
-Red   | Red : 1
-" "   | "No results given"
+|  :--: |  :--:  |
+|"Green | Green: 1|
+|Amber | Amber : 1|
+|Red   | Red : 1|
+|"Green, Green, Red, Amber, Red" | "Green: 2\nAmber: 1\nRed: 2" | 
+|" "   | "No results given"|
+| 8    | "Invalid input    |
 
-no color for 0 count
