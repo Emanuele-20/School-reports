@@ -9,17 +9,15 @@ function score(arg){
     for(let i = 0; i < array.length ; i++){
 
         if((array[i].trim() === "Green")){
-           console.log(array)
-           nGreen += 1
-           console.log(nGreen)
+           nGreen++
         }
 
         if(array[i].trim() === "Amber"){
-            nAmber += 1
+            nAmber++
         }
 
         if(array[i].trim() === "Red"){
-            nRed += 1  
+            nRed++ 
         }
 
         if(array[i].trim() === ""){
@@ -31,7 +29,6 @@ function score(arg){
     
     
         if(nGreen > 0){
-            //console.log(nGreen) -> 1
             solution.push(`Green: ${nGreen}`)
         } 
         if (nAmber > 0 ){
@@ -41,12 +38,9 @@ function score(arg){
             solution.push(`Red: ${nRed}`)
         }
 
-        console.log(solution)
-        return solution.join()
-         
-     
-    
-    
+        
+        return solution.join("\n")
+
 }
 
 

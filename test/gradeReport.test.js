@@ -46,8 +46,12 @@ describe("Report", () => {
         expect(score("Amber,Amber")).toBe("Amber: 2")
     })
 
-    it("Return 'Amber: 2' when a single green value is passed", () => {
-        expect(score("Amber,Amber")).toBe("Amber: 2")
+    xit("Return Green: 2, Amber 1, Red: 2 when multiple rate colors are passed", () => {
+        expect(score("Green, Green, Red, Amber, Red")).toBe("Green: 2,Amber: 1,Red: 2")
+    })
+
+    it("Return Green: 2\nAmber: 1\nRed: 2 when multiple rate colors are passed", () => {
+        expect(score("Green, Green, Red, Amber, Red")).toBe("Green: 2\nAmber: 1\nRed: 2")
     })
 
 
