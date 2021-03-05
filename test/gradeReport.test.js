@@ -22,8 +22,32 @@ describe("Report", () => {
         expect(score("Red")).toBe("Red: 1")
     })
 
-    it("Return 'Green: 2' when a single green value is passed", () => {
+    it("Return 'Green: 2' when a single green value is passed (spaces in between)", () => {
         expect(score("Green, Green")).toBe("Green: 2")
+    })
+
+    it("Return 'Red: 2' when a single green value is passed (spaces in between)", () => {
+        expect(score("Red, Red")).toBe("Red: 2")
+    })
+
+    it("Return 'Amber: 2' when a single green value is passed (spaces in between)", () => {
+        expect(score("Amber, Amber")).toBe("Amber: 2")
+    })
+
+    it("Return 'Green: 2' when a single green value is passed", () => {
+        expect(score("Green,Green")).toBe("Green: 2")
+    })
+
+    it("Return 'Red: 2' when a single green value is passed", () => {
+        expect(score("Red,Red")).toBe("Red: 2")
+    })
+
+    it("Return 'Amber: 2' when a single green value is passed", () => {
+        expect(score("Amber,Amber")).toBe("Amber: 2")
+    })
+
+    it("Return 'Amber: 2' when a single green value is passed", () => {
+        expect(score("Amber,Amber")).toBe("Amber: 2")
     })
 
 
