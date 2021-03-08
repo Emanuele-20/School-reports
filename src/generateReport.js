@@ -4,23 +4,23 @@ function score(arg){
     let nAmber = 0
     let nRed = 0
     let solution = []
-    let array = arg.split(",")
-
-    for(let i = 0; i < array.length ; i++){
-
-        if((array[i].trim() === "Green")){
-           nGreen++
+    let inputGrades = arg.split(",")
+    
+    for(let i = 0; i < inputGrades.length ; i++){
+        
+        if((inputGrades[i].trim() === "Green")){
+            nGreen++
         }
 
-        if(array[i].trim() === "Amber"){
+        if(inputGrades[i].trim() === "Amber"){
             nAmber++
         }
 
-        if(array[i].trim() === "Red"){
+        if(inputGrades[i].trim() === "Red"){
             nRed++ 
         }
 
-        if(array[i].trim() === ""){
+        if(inputGrades[i].trim() === ""){
             solution.push("No result given")
         }
         
